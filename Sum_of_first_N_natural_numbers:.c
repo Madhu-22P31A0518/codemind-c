@@ -1,15 +1,13 @@
 #include<stdio.h>
-int sum(int n)
+void di(int a)
 {
-    int a;
-    a=(n*(n+1))/2;
-    return a;
+    int c;
+    c=(a*(a+1))/2;
+    printf("%d",c);
 }
 int main()
 {
-    int n;
-    scanf("%d",&n);
-    int x;
-    x=sum(n);
-    printf("%d",x);
+   int a;
+   scanf("%d",&a);
+   di(a);
 }
