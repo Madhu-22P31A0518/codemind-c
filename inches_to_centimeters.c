@@ -1,9 +1,14 @@
 #include<stdio.h>
+void ic(int a)
+{
+    float c;
+    c=a*2.54;
+    printf("%0.2f",c);
+}
 int main()
 {
     int a;
     scanf("%d",&a);
-    float b;
-    b=2.54*a;
-    printf("%0.2f",b);
+    ic(a);
+    
 }
