@@ -1,7 +1,9 @@
 #include<stdio.h>
-void cn(int a,int b,int c)
+int main()
 {
-    if(a<=(b*1+c*2))
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    if(a<=b*1+c*2)
     {
         printf("Qualify");
     }
@@ -9,10 +11,4 @@ void cn(int a,int b,int c)
     {
         printf("Not Qualify");
     }
-}
-int main()
-{
-    int a,b,c;
-    scanf("%d%d%d",&a,&b,&c);
-    cn(a,b,c);
 }
