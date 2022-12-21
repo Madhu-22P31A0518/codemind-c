@@ -1,9 +1,14 @@
 #include<stdio.h>
+void tr(int a)
+{
+    int h,m;
+    h=a/60;
+    m=(a%60);
+    printf("%d Hour(s) %d Minute(s)",h,m);
+}
 int main()
 {
-    int n,h,m;
-    scanf("%d",&n);
-    h=n/60;
-    m=n%60;
-    printf("%d Hour(s) %d Minute(s)",h,m);
+    int a;
+    scanf("%d",&a);
+    tr(a);
 }
