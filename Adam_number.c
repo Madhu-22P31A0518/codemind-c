@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a,n,e,r,s=0,p=0,b;
+    scanf("%d",&a);
+    n=a*a;
+    while(n!=0)
+    {
+        r=n%10;
+        s=s*10+r;
+        n=n/10;
+    }
+    b=sqrt(s);
+    while(b!=0)
+    {
+        e=b%10;
+        p=p*10+e;
+        b=b/10;
+    }
+    if(p==a)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+}
