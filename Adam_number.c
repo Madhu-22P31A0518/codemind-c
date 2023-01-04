@@ -2,23 +2,23 @@
 #include<math.h>
 int main()
 {
-    int a,n,e,r,s=0,p=0,b;
+    int a,m,r,s=0,p,e,q=0;
     scanf("%d",&a);
-    n=a*a;
-    while(n!=0)
+    m=a*a;
+    while(m!=0)
     {
-        r=n%10;
+        r=m%10;
         s=s*10+r;
-        n=n/10;
+        m=m/10;
     }
-    b=sqrt(s);
-    while(b!=0)
+    e=sqrt(s);
+    while(e!=0)
     {
-        e=b%10;
-        p=p*10+e;
-        b=b/10;
+        p=e%10;
+        q=q*10+p;
+        e=e/10;
     }
-    if(p==a)
+    if(q==a)
     {
         printf("True");
     }
